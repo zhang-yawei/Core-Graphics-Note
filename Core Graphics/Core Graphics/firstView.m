@@ -22,12 +22,9 @@
 
 
 
-
+//   使用UIKit在Cocoa为我们提供的当前上下文中完成绘图任务。
 -(void) drawRect: (CGRect) rect {
     UIBezierPath* p = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(100,200,100,100)];
-    
-    //  UIBezierPath* p = [UIBezierPathbezierPathWithOvalInRect:CGRectMake(0,0,100,100)];
-    
     [[UIColor blueColor] setFill];
     
     [p fill];

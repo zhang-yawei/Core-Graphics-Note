@@ -16,6 +16,11 @@
 
 @end
 
+
+// 参考文档:http://www.cocoachina.com/industry/20140115/7703.html
+
+
+
 @implementation ViewController
 
 - (void)viewDidLoad {
