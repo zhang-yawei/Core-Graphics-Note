@@ -1,14 +1,19 @@
 //
-//  firstView.m
+//  thirdView.m
 //  Core Graphics
 //
-//  Created by zhang on 15/11/13.
+//  Created by zhang on 15/11/16.
 //  Copyright © 2015年 zhangwei. All rights reserved.
 //
 
-#import "firstView.h"
 
-@implementation firstView
+
+#import "thirdView.h"
+
+
+
+@implementation thirdView
+
 
 -(id)init
 {
@@ -16,23 +21,25 @@
         self.frame = [UIScreen mainScreen].bounds;
         self.backgroundColor = [UIColor whiteColor];
         
+
+        [self.layer setNeedsDisplay];
+        
+        
+        
     }
     return self;
 }
 
 
+-(void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
+{
+    UIGraphicsPushContext(ctx);
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CYCLE_RECT];
+    [[UIColor greenColor] setFill];
+    [path fill];
+    UIGraphicsPopContext();
 
-//   使用UIKit在Cocoa为我们提供的当前上下文中完成绘图任务。
--(void) drawRect: (CGRect) rect {
-//  在drawRect:方法中,可以直接绘图
-    UIBezierPath* p = [UIBezierPath bezierPathWithOvalInRect:CYCLE_RECT];
-    [[UIColor blueColor] setFill];
-    
-    [p fill];
-    
 }
-
-
 
 /*
 // Only override drawRect: if you perform custom drawing.

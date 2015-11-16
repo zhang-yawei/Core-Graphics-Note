@@ -1,41 +1,41 @@
 //
-//  secondView.m
+//  fourthView.m
 //  Core Graphics
 //
-//  Created by zhang on 15/11/13.
+//  Created by zhang on 15/11/16.
 //  Copyright © 2015年 zhangwei. All rights reserved.
 //
 
-#import "secondView.h"
+#import "fourthView.h"
 
-@implementation secondView
-
-
+@implementation fourthView
 -(id)init
 {
     if (self = [super init]) {
         self.frame = [UIScreen mainScreen].bounds;
         self.backgroundColor = [UIColor whiteColor];
         
+        [self.layer setNeedsDisplay];
+        
+        
     }
     return self;
 }
 
+-(void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
+{
+    CGContextAddEllipseInRect(ctx, CYCLE_RECT);
+    CGContextSetFillColorWithColor(ctx, [UIColor redColor].CGColor);
+    CGContextFillPath(ctx);
+}
 
 
-
+/*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-// 使用Core Graphics 绘制蓝圈
-
-    CGContextRef con = UIGraphicsGetCurrentContext();
-    CGContextAddEllipseInRect(con, CYCLE_RECT);
-    CGContextSetFillColorWithColor(con, [UIColor blueColor].CGColor);
-    CGContextFillPath(con);
-    
-    
+    // Drawing code
 }
-
+*/
 
 @end
