@@ -33,6 +33,7 @@
     CGContextAddEllipseInRect(con, CYCLE_RECT);
     CGContextSetFillColorWithColor(con, [UIColor blueColor].CGColor);
     CGContextFillPath(con);
+
     
     
 }

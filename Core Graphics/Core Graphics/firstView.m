@@ -26,9 +26,13 @@
 -(void) drawRect: (CGRect) rect {
 //  在drawRect:方法中,可以直接绘图
     UIBezierPath* p = [UIBezierPath bezierPathWithOvalInRect:CYCLE_RECT];
-    [[UIColor blueColor] setFill];
+    [[UIColor blueColor] setStroke];
+    [p stroke];
     
-    [p fill];
+//    fill 填充  stroke 划线
+//    [[UIColor blueColor] setFill];
+//    [p fill];
+    
     
 }
 

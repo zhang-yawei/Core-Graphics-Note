@@ -46,6 +46,12 @@
             如果当前处于UIGRaphicsBeginImageContexOption 或者drawRect:方法中,并没有引用一个上下文,为了使用Core Graphics,可以调用方法UIGraphicsGetCurrentContext函数来获取当前上下文.
  
  
+    那么,获取上下文有三种方法:drawRect:、drawRect: inContext:、UIGraphicsBeginImageContextWithOptions
+    绘图有两种  UIKit , Coreraphics
+    
+    所以共有六种组合可供使用.
+ 
+
  
  */
 
@@ -56,8 +62,8 @@
     [super viewDidLoad];
     
     
-    self.VCArray = @[@"firstView",@"secondView",@"thirdView",@"fourthView",@"fivethView"];
-    self.detailArray = @[@"在UIView的子类方法drawRect：中绘制一个蓝色圆",@"使用Core Graphics实现绘制蓝色圆。",@"在UIView子类的drawLayer:inContext：方法中实现绘图任务",@" 使用Core Graphics在drawLayer:inContext：方法中实现同样操作",@" 使用UIKit实现："];
+    self.VCArray = @[@"firstView",@"secondView",@"thirdView",@"fourthView",@"fivethView",@"sixthView"];
+    self.detailArray = @[@"在UIView的子类方法drawRect：中绘制一个蓝色圆",@"使用Core Graphics实现绘制蓝色圆。",@"在UIView子类的drawLayer:inContext：方法中实现绘图任务",@" 使用Core Graphics在drawLayer:inContext：方法中实现同样操作",@" 使用UIKit实现：",@"123"];
 
     self.tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
 

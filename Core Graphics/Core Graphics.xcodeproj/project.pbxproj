@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1719E01C3BB670006238BD /* sixthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1719DF1C3BB670006238BD /* sixthView.m */; };
 		1F378DCE1BF5B52100ACAE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F378DCD1BF5B52100ACAE1B /* main.m */; };
 		1F378DD11BF5B52100ACAE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F378DD01BF5B52100ACAE1B /* AppDelegate.m */; };
 		1F378DD41BF5B52100ACAE1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F378DD31BF5B52100ACAE1B /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1719DE1C3BB670006238BD /* sixthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sixthView.h; sourceTree = "<group>"; };
+		1F1719DF1C3BB670006238BD /* sixthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sixthView.m; sourceTree = "<group>"; };
 		1F378DC91BF5B52100ACAE1B /* Core Graphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Graphics.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F378DCD1BF5B52100ACAE1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F378DCF1BF5B52100ACAE1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				1F701FF11BF97CF7009A3149 /* fourthView.m */,
 				1F701FF31BF97D05009A3149 /* fivethView.h */,
 				1F701FF41BF97D05009A3149 /* fivethView.m */,
+				1F1719DE1C3BB670006238BD /* sixthView.h */,
+				1F1719DF1C3BB670006238BD /* sixthView.m */,
 				1F378DD51BF5B52100ACAE1B /* Main.storyboard */,
 				1F378DD81BF5B52100ACAE1B /* Assets.xcassets */,
 				1F378DDA1BF5B52100ACAE1B /* LaunchScreen.storyboard */,
@@ -307,6 +312,7 @@
 				1F701FF21BF97CF7009A3149 /* fourthView.m in Sources */,
 				1F378DD11BF5B52100ACAE1B /* AppDelegate.m in Sources */,
 				1F378E0A1BF5E5DF00ACAE1B /* secondView.m in Sources */,
+				1F1719E01C3BB670006238BD /* sixthView.m in Sources */,
 				1F701FF51BF97D05009A3149 /* fivethView.m in Sources */,
 				1F378DCE1BF5B52100ACAE1B /* main.m in Sources */,
 				1F378E011BF5DB5400ACAE1B /* DetailViewController.m in Sources */,
